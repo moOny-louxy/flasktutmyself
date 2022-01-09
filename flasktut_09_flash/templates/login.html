@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+    <form method="post" action="http://localhost:5000/login">
+        <ul>
+            <li>Email: <input type="text" name="email"> </li>
+            <li>Password: <input type="password" name="password"></li>
+            <li><input type="submit" value="提交"></li>
+            {% if error %}
+                <li>{{ error }}</li>
+            {% endif %}
+        </ul>
+    </form>
+</body>
+</html>
